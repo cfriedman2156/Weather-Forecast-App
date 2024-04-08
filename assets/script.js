@@ -21,7 +21,7 @@ function submitSearch (event) {
 }
 
 function getCoordinates (search) {
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${search}&appid=${weatherApiKey}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${search}&appid=${weatherApiKey}`;
     fetch(url).then(function(response) {
         return response.json();
     })
