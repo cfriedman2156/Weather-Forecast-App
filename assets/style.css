@@ -36,9 +36,10 @@ header h1 {
 
 #left-section {
     border: solid 2px black;
-    width: 30%;
+    width: 25%;
     height: 1463px;
     float: left;
+    clear: both;
     margin: 25px;
     
 }
