@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Weather Guru Pete's Weather App</title>
+</head>
+<body>
+    <header>
+        <img src = "assets/images/pete.jpg">
+        <h1>Weather-Guru Pete's Forecast</h1>
+        <div>
+            <p>"It's sunny in Cabo!"</p>
+            <p>- Petar Jivkov</p>
+        </div>
+    </header>
+    <main>
+        <section id="left-section">
+            <form id="city-search">
+                <h1>Search for a City</h1>
+                <input id="city-input">
+                <br>
+                <button id="search-button">Search</button>
+            </form>
+            <div id="search-history">
+                <h1>Search History</h1>
+                <div id = "past-searches">
+                    <!--append past searches here-->
+                </div>
+            </div>
+        </section>
+        <section id="right-section">
+            <div id="selected-city-today">
+                <!--append current search's weather today here-->
+            </div>
+            <div id="five-day-box">
+                    <!--append 5 day forecast here-->   
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/plugin/utc.min.js" integrity="sha512-z84O912dDT9nKqvpBnl1tri5IN0j/OEgMzLN1GlkpKLMscs5ZHVu+G2CYtA6dkS0YnOGi3cODt3BOPnYc8Agjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/plugin/timezone.min.js" integrity="sha512-jmsGNYDezdyZ+W3bVeZy83kZp/2n5BgWe/0solkveG0vSSrP9XIVTD1tNiM1OqImc4H3OxHfs1uSfVclOU3mWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.10/dayjs.min.js" integrity="sha512-FwNWaxyfy2XlEINoSnZh1JQ5TRRtGow0D6XcmAWmYCRgvqOUTnzCxPc9uF35u5ZEpirk1uhlPVA19tflhvnW1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "assets/script.js"></script>
+</body>
+</html>
